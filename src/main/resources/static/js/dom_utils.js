@@ -11,6 +11,6 @@ export function clearElementChildren(element) {
         element.removeChild(element.firstChild);
     }
 }
-
+//pobrano z https://git.pg.edu.pl/internet-services-architectures/simple-rpg/tree/javascript
 
 

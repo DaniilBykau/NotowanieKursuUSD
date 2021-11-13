@@ -152,15 +152,15 @@ function loadDiagram() {
 }
 
 function start(x) {
-    fetchAsks(x);
-    fetchBids(x);
-    fetchDates(x);
+    fetchAsks(x);  //pobranie historii kursu sprzedaży
+    fetchBids(x);   //pobranie historii kursu kupna
+    fetchDates(x);  //pobranie dat
 
     setTimeout(() => {
-        buildTable();
-        loadDiagram()
-        fetchAskDiff(x);
-        fetchBidDiff(x)
+        buildTable();   //budowanie tabeli
+        loadDiagram()   //rysowanie
+        fetchAskDiff(x);    //różnica sprzedaży
+        fetchBidDiff(x)     //różnica kupna
     }, 1000);
 }
 

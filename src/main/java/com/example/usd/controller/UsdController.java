@@ -21,26 +21,31 @@ public class UsdController {
         this.rateService = rateService;
     }
 
+    //pobieranie dat
     @GetMapping("dates/{Date}")
     public List<String> getDateHistory(@PathVariable(value = "Date") String date) {
         return rateService.getDates(date);
     }
 
+    //pobieranie historii kursu sprzedaży
     @GetMapping("asks/{Date}")
     public List<Float> getAsksHistory(@PathVariable(value = "Date") String date) {
         return rateService.getAsks(date);
     }
 
+    //pobieranie historii kursu kupna
     @GetMapping("bids/{Date}")
     public List<Float> getBidHistory(@PathVariable(value = "Date") String date) {
         return rateService.getBids(date);
     }
 
+    //pobieranie różnicy kupna
     @GetMapping("bids/difference/{Date}")
     public Float getBidDifference(@PathVariable(value = "Date") String date) {
         return rateService.getBidsDifference(date);
     }
 
+    //pobieranie różnicy sprzedaży
     @GetMapping("asks/difference/{Date}")
     public Float getAskDifference(@PathVariable(value = "Date") String date) {
         return rateService.getAsksDifference(date);

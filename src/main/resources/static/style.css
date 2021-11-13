@@ -34,14 +34,14 @@ tr:nth-child(1) td{
     color: #303032;
     font-size:10px;
     height: 100px;
-    text-align: right;
     position:relative;
     border-radius: 10px;
+    vertical-align: middle
 }
 h1{
-    position:absolute; /* добавили */
-    bottom:0;
+    position:absolute;
     margin: 10px;
+    vertical-align: middle
 }
 
 div.search_date{
