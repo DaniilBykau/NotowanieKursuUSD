@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="module" src="script.js" defer="defer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Notowanie kursu kupna i sprzedaży USD</h1>
+    </header>
+
+    <section class="main-section">
+        <div class="search_date">
+            <input type="date" id="date" min="2020-11-15" name="date"/>
+
+            <button id="start" type="button">Start</button>
+        </div>
+        <div class="content">
+
+            <div class="table_data">
+                <article class="text--justified">
+                    <table class="data-table">
+
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+
+            <div class="diff">
+                <canvas id="myChart" width="400" height="300"></canvas>
+                <div id="diff_ask"></div>
+                <div id="diff_bid"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+
+</div>
+
+</body>
+</html>
